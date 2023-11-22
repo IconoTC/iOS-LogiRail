@@ -28,6 +28,9 @@
        b. Ejemplo
 
 ## 6. VIPER
+       a. Definición y ventajas
+       
+       b. Ejemplo
 
 ## 7. Inyección dependencias
        a. Conceptos clave
