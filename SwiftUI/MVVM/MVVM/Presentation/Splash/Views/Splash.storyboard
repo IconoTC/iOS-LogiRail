@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tuL-MP-rcw">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="8YW-Wr-kQl">
+            <objects>
+                <viewController id="tuL-MP-rcw" customClass="SplashViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8j2-pv-fSv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo_simpsons" translatesAutoresizingMaskIntoConstraints="NO" id="R2J-j8-pWJ">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="4w0-dj-qBA">
+                                <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hab-4S-bx9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="R2J-j8-pWJ" secondAttribute="bottom" id="2QX-m3-gEm"/>
+                            <constraint firstItem="4w0-dj-qBA" firstAttribute="centerY" secondItem="8j2-pv-fSv" secondAttribute="centerY" id="KXU-DM-isc"/>
+                            <constraint firstItem="R2J-j8-pWJ" firstAttribute="leading" secondItem="hab-4S-bx9" secondAttribute="leading" id="OD9-YE-lRA"/>
+                            <constraint firstItem="4w0-dj-qBA" firstAttribute="centerX" secondItem="8j2-pv-fSv" secondAttribute="centerX" id="RD1-Td-k6G"/>
+                            <constraint firstItem="R2J-j8-pWJ" firstAttribute="trailing" secondItem="hab-4S-bx9" secondAttribute="trailing" id="SMx-Gw-blS"/>
+                            <constraint firstItem="R2J-j8-pWJ" firstAttribute="top" secondItem="8j2-pv-fSv" secondAttribute="top" id="nLg-2z-cET"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="awD-nr-lS2"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="4w0-dj-qBA" id="j99-wu-xOa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOY-eR-5Hd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061.8320610687022" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fondo_simpsons" width="400" height="711"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

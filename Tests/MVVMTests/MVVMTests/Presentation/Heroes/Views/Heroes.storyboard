@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Heroes View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HeroesViewController" id="Y6W-OH-hqX" customClass="HeroesViewController" customModule="MVVMTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VoB-Qh-BLd">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <view hidden="YES" alpha="0.80000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3dB-5R-Au7">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="vnf-DH-ta0">
+                                        <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="vnf-DH-ta0" firstAttribute="centerX" secondItem="3dB-5R-Au7" secondAttribute="centerX" id="M8F-2G-7gd"/>
+                                    <constraint firstItem="vnf-DH-ta0" firstAttribute="centerY" secondItem="3dB-5R-Au7" secondAttribute="centerY" id="vwu-PX-veT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VoB-Qh-BLd" secondAttribute="bottom" id="2yD-MR-shB"/>
+                            <constraint firstAttribute="bottom" secondItem="3dB-5R-Au7" secondAttribute="bottom" id="InR-VO-Vdq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VoB-Qh-BLd" secondAttribute="trailing" id="J4Z-yb-Rj4"/>
+                            <constraint firstItem="3dB-5R-Au7" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="TOy-GZ-50p"/>
+                            <constraint firstItem="3dB-5R-Au7" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="ad8-bi-L75"/>
+                            <constraint firstItem="VoB-Qh-BLd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="eZl-Qc-9vC"/>
+                            <constraint firstItem="3dB-5R-Au7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lyq-of-rFT"/>
+                            <constraint firstItem="VoB-Qh-BLd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="vHD-8Z-XXz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="3dB-5R-Au7" id="C06-fs-BZF"/>
+                        <outlet property="tableView" destination="VoB-Qh-BLd" id="KLx-4S-xti"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

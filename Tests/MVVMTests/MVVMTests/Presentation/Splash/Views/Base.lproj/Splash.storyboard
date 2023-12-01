@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="prE-Ug-FgS">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="H9W-mC-wCJ">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="prE-Ug-FgS" customClass="SplashViewController" customModule="MVVMTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2kW-L5-QCG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splash" translatesAutoresizingMaskIntoConstraints="NO" id="Fbq-TV-Nfm">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YsY-kb-4aH">
+                                <rect key="frame" x="178" y="761" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9cQ-qt-Ju3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YsY-kb-4aH" firstAttribute="centerX" secondItem="2kW-L5-QCG" secondAttribute="centerX" id="8AH-hs-Gv1"/>
+                            <constraint firstItem="Fbq-TV-Nfm" firstAttribute="top" secondItem="2kW-L5-QCG" secondAttribute="top" id="9Kk-jj-CeQ"/>
+                            <constraint firstItem="9cQ-qt-Ju3" firstAttribute="bottom" secondItem="YsY-kb-4aH" secondAttribute="bottom" constant="20" id="bWx-FL-CLH"/>
+                            <constraint firstItem="Fbq-TV-Nfm" firstAttribute="leading" secondItem="9cQ-qt-Ju3" secondAttribute="leading" id="eIv-BQ-s7c"/>
+                            <constraint firstItem="Fbq-TV-Nfm" firstAttribute="trailing" secondItem="9cQ-qt-Ju3" secondAttribute="trailing" id="rRy-0m-Zaj"/>
+                            <constraint firstAttribute="bottom" secondItem="Fbq-TV-Nfm" secondAttribute="bottom" id="yd1-Nf-2NS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loading" destination="YsY-kb-4aH" id="63A-Xs-yWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5m-Du-Ehl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_splash" width="214" height="306"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
